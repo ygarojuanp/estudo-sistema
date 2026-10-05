@@ -1,0 +1,24 @@
+{
+  "name": "estudo-sistema",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ygarojuanp/estudo-sistema#readme",
+  "bugs": {
+    "url": "https://github.com/ygarojuanp/estudo-sistema/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygarojuanp/estudo-sistema.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
