@@ -70,8 +70,16 @@ while (executando) {
 
             // TODO:
             // Verificar se existem alunos cadastrados
-            if (alunos.length != 0){
-                for (i = 0; i < alunos.length; i++) {
+            if (alunos.length != 0) {
+
+                // TODO:
+                // Percorrer o array utilizando FOR
+                for (let i = 0; i < alunos.length; i++) {
+
+                    // Mostrar:
+                    // Nome
+                    // Idade
+                    // Nota
                     console.log(
                         "Id: " + (i + 1) + "\n" +
                         "nome: " + alunos[i].nome + "\n" +
@@ -79,19 +87,10 @@ while (executando) {
                         "nota: " + alunos[i].nota + "\n"
                     );
                 }
-            }else{
+            } else {
                 console.log("Nenhum aluno cadastrado!")
             }
 
-
-
-            // TODO:
-            // Percorrer o array utilizando FOR
-
-            // Mostrar:
-            // Nome
-            // Idade
-            // Nota
 
 
             break;
@@ -111,12 +110,24 @@ while (executando) {
             // TODO:
             // Percorrer o array procurando
             // pelo nome informado.
+            for (let i = 0; i < alunos.length; i++) {
+                // Se encontrar:
+                // - Mostrar os dados
+                if (alunos[i].nome === nomeBusca) {
+                    console.log("========")
+                    console.log("Aluno: " + alunos[i].nome);
+                    console.log("Idade: " + alunos[i].idade);
+                    console.log("nota: " + alunos[i].nota);
+                    console.log("=======");
+                }
 
-            // Se encontrar:
-            // - Mostrar os dados
-            // - Alterar alunoEncontrado para true
+                // - Alterar alunoEncontrado para true
+                alunoEncontrado = true;
+                break;
+
+            }
+
             // - Utilizar BREAK
-
 
             if (!alunoEncontrado) {
                 console.log("Aluno nao encontrado.");
