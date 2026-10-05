@@ -37,18 +37,25 @@ while (executando) {
 
             // TODO:
             // Verificar se a nota está entre 0 e 10
-            if (nota >= 0 && nota <= 10){
-                console.log("Shouuuuuum");
-            } else{
+            if (nota >= 0 && nota <= 10) {
+                // TODO:
+                // Criar um objeto aluno
+
+                let aluno = {
+                    nome: nome,
+                    idade: idade,
+                    nota: nota
+                }
+
+                // TODO:
+                // Adicionar o aluno ao array
+                alunos.push(aluno);
+
+            } else {
                 console.log("A nota é invalida! Favor digitar de 0 á 10");
 
             }
 
-            // TODO:
-            // Criar um objeto aluno
-
-            // TODO:
-            // Adicionar o aluno ao array
 
 
             break;
@@ -63,6 +70,20 @@ while (executando) {
 
             // TODO:
             // Verificar se existem alunos cadastrados
+            if (alunos.length != 0){
+                for (i = 0; i < alunos.length; i++) {
+                    console.log(
+                        "Id: " + (i + 1) + "\n" +
+                        "nome: " + alunos[i].nome + "\n" +
+                        "Idade: " + alunos[i].idade + "\n" +
+                        "nota: " + alunos[i].nota + "\n"
+                    );
+                }
+            }else{
+                console.log("Nenhum aluno cadastrado!")
+            }
+
+
 
             // TODO:
             // Percorrer o array utilizando FOR
