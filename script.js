@@ -131,6 +131,7 @@ while (executando) {
 
             if (!alunoEncontrado) {
                 console.log("Aluno nao encontrado.");
+                
             }
 
             break;
